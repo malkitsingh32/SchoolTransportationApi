@@ -44,8 +44,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: myCors,
                       policy =>
                       {
-                          policy.WithOrigins("http://localhost:4200","https://localhost:4200", "https://darkaiyosher.datavanced.com", "http://darkaiyosher.datavanced.com", "http://betadarkaiyosher.datavanced.com", "https://betadarkaiyosher.datavanced.com",
-                              "https://betadarkaiyosherapi.datavanced.com", "http://betadarkaiyosherapi.datavanced.com", "https://portal.darkeiyosher.org", "http://portal.darkeiyosher.org", "*").AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithExposedHeaders("Content-Disposition"); ;
+                          policy.WithOrigins("http://localhost:4200","https://localhost:4200",  
+                              "https://schooltransportationapi.onrender.com", "http://schooltransportationapi.onrender.com",  "*").AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithExposedHeaders("Content-Disposition"); ;
                       });
 });
 //builder.Services.AddCors(options =>
