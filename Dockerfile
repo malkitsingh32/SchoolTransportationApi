@@ -13,6 +13,7 @@ COPY ["Middlewares/Middlewares.csproj", "Middlewares/"]
 COPY ["Persistence/Persistence.csproj", "Persistence/"]
 COPY ["Helper/Helper.csproj", "Helper/"]
 COPY ["Domain/Domain.csproj", "Domain/"]
+COPY ["DTO/DTO.csproj", "DTO/"]
 
 # Restore
 RUN dotnet restore "API/API.csproj"
