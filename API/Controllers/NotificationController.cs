@@ -26,7 +26,7 @@ namespace API.Controllers
         [Route("GetBulkMessages")]
         public async Task<IActionResult> GetBulkMessages([FromBody] SaveBulkMessageRequestDto saveBulkMessageRequestDto)
         {
-            var result = await Mediator.Send(saveBulkMessageRequestDto.Adapt<GetBulkMessagesQuery>());
+            var result =  await Mediator.Send(saveBulkMessageRequestDto.Adapt<GetBulkMessagesQuery>());
             return Ok(result);
         }
         #endregion
