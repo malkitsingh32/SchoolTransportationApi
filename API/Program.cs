@@ -44,8 +44,8 @@ builder.Services.AddCors(options =>
     options.AddPolicy(name: myCors,
                       policy =>
                       {
-                          policy.WithOrigins("http://localhost:4200","https://localhost:4200",  
-                              "https://schooltransportationapi.onrender.com", "http://schooltransportationapi.onrender.com", "https://schooltransportationapi.onrender.com", "http://schooltransportationapi.onrender.com",  " * ").AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithExposedHeaders("Content-Disposition"); ;
+                          policy.WithOrigins("http://localhost:4200","https://localhost:4200",
+                              "https://schooltransportmanagement.netlify.app", "http://schooltransportmanagement.netlify.app", "https://schooltransportationapi.onrender.com", "http://schooltransportationapi.onrender.com",  " * ").AllowAnyHeader().AllowAnyMethod().AllowCredentials().WithExposedHeaders("Content-Disposition"); ;
                       });
 });
 //builder.Services.AddCors(options =>
