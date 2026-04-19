@@ -6,7 +6,6 @@ using Infrastructure.Implementation.Services;
 using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 using System.Text;
-using System.Windows.Forms;
 using Timer = System.Threading.Timer;
 
 namespace API.BackgroundServices
